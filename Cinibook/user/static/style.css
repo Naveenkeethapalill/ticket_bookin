@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .main {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  
+  .hero-image {
+    background: url("static/banner4543.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-image h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .movies  p {
+     font-size: 20px;
+
+  }
+
+  .movies img {
+    height: 200px;
+    width: 150px;
+
+  }
+
+  .movies ul {
+  
+  list-style: none;
+ 
+
+  }
+
+  .movies li {
+    display: inline;
+    margin-right: 100px;
+    float: left;
+  }
+
+  .Screen  p {
+    font-size: 20px;
+
+ }
+
+ .Screen img {
+   height: 200px;
+   width: 150px;
+
+ }
+
+ .Screen ul {
+ list-style: none;
+ display: inline;
+ display: flex;
+ }
+
+ .Screen li {
+   margin-right: 100px;
+ }
+ .footer {
+    background-color: #333;
+    height: 300px;
+  }
+
+.footer ul{
+    list-style: none;
+   
+}
+.footer a{
+   color: #fff;
+   padding: 20px;
+   
+}
+.footer li{
+    padding: 10px;
+    direction: none;
+    
+}
+.footer p{
+    color: #fff;
+    padding-left: 700px;
+}
+.movies > ul > li 
+{
+  display: inline;
+}
+.movies{
+  padding-bottom: 400px;
+}
+.Screen {
+  padding-bottom: 100px;
+}
+.Count {
+  margin-top: 100px;
+}
+
+

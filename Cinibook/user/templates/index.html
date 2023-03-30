@@ -1,0 +1,25 @@
+{% extends 'theme.html'%}
+{% load static %}
+{% block content %}
+<main>
+<div class="hero-image">
+  <h2>Book your movie tickets online</h2>
+  <p>Choose your movie, cinema and showtime, and book your tickets now!</p>
+  <a href="#"><button type="button" class="btn btn-info">Book Now</button></a>
+</div>
+<div class="movies">
+ <h2>Now Showing</h2>
+  <ul>
+      {% for m in movie  %}
+      <li>
+       <img src="{{m.image.url}}" alt="Movie 1">
+       <h3>{{m.name}}</h3>
+       <p>{{m.disc}}</p>
+       <a href="{% url 'now' m.id %}"><button type="button" class="btn btn-info">Book Now</button></a>
+       <a href="{% url 'single' m.id %}"><button type="button" class="btn btn-info">View more</button></a>
+      </li>
+     {% endfor %}
+  </ul>
+</div>
+</main>
+{% endblock %}

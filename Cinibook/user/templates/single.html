@@ -1,0 +1,16 @@
+{% extends 'theme.html'%}
+{% load static %}
+{% block content %}
+<div class="selected">
+    {% for m in movie  %}
+    <ul>
+       <li>
+         <img src="{{m.image.url}}" alt="Movie 1">
+         <h3>{{m.name}}</h3>
+         <p>{{m.disc}}</p>
+         <a href="#"><button type="button" class="btn btn-info">Book Now</button></a>
+       </li>
+    </ul>
+     {% endfor %}
+</div>
+{% endblock %}

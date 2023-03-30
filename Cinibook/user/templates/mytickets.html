@@ -1,0 +1,25 @@
+{% extends 'theme.html'%}
+{% load static %}
+{% block content %}
+
+<h2>My Tickets</h2>
+<div>
+    <table>
+        {% for m in data  %}
+        <tr>
+            <th style="width: 120px;">Name</th>
+            <th style="width: 120px;">Tickets</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>{{m.name}}</td>
+            <td>{{m.ticket}}</td>
+            <td>{{m.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/pdf"><button>Print</button></a>
+</div>
+
+
+{% endblock %}

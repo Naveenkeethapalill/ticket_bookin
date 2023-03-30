@@ -1,0 +1,30 @@
+{% extends 'theme.html'%}
+{% load static %}
+{% block content %}
+<div class="selected">
+    {% for m in movie  %}
+    <ul>
+       <li>
+         <img src="{{m.image.url}}" alt="Movie 1">
+         <h3>{{m.name}}</h3>
+         <p>{{m.disc}}</p>
+         <a href="#"><button type="button" class="btn btn-info">Read more</button></a>
+       </li>
+      </ul>
+</div>
+<div class="Tcount">
+  <form action="" method="post">
+    {% csrf_token %}
+    <input type="hidden" value="{{m.name}}" name="name">
+    <input type="hidden" value="{{ request.user.username }}" name="user">
+    <input type="text" name="ticket">
+    <input type="date" name="date">
+   <input type="submit" value="Booking">
+  </form>
+  {% endfor %}
+
+</div>
+
+{% endblock %}
+
+
